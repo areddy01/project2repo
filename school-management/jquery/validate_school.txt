@@ -1,0 +1,45 @@
+
+
+function validate_school()
+{
+$('#errmark').hide();
+$('#error').hide();		
+
+
+	var data=$(tes).val();
+    var len=data.length;
+    var c;
+    for(var i=0;i<len;i++)
+    {
+      c=data.charAt(i).charCodeAt(0);
+      if(c <48 || c >57)
+      {
+        $('#error').show();
+        $(tes).addClass("focuson");
+        return false;
+      }
+      else
+      
+      {
+      $(tes).removeClass("focuson");
+        $('#error').hide();
+        return true;
+      }
+    }
+      if ($(tes).val() == '')
+      {
+		$(tes).addClass("focuson");
+		$("#errmark").show();
+		return false;
+
+      }
+      else
+      
+      {
+      $(tes).removeClass("focuson");
+        $('#errmark').hide();
+        return true;
+      }
+
+
+}

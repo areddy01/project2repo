@@ -1,0 +1,10 @@
+	<tr><td>Assessment Term Type </td><td><input name="assessment_term_type" type="text"  size="40" value = "" /></td></tr>
+	<tr><td>No of Section</td><td><input name="no_of_section" type="text"  size="40" value = "" /></td></tr>
+
+
+
+
+outside controller
+
+'assessment_term_type'=>$_REQUEST['assessment_term_type'],
+'no_of_section'=>$_REQUEST['no_of_section'],

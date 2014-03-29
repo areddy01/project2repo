@@ -1,0 +1,312 @@
+<form method = "post" id ="" action = "/admin/addinfra/"  value = ""  style="width:40%" class = "customForm">
+<table>
+<tr>
+<td><table border="0" cellpadding="1" style="width: 100%" >
+	<tr>
+		<td style="width: 293px; height: 23px"></td>
+		<td colspan="3" style="height: 23px">
+		<input id = "schoolname" name="school_profile[sch_full_name]" style="width: 539px" type="text" /></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">School Name for Graphs</td>
+		<td style="width: 179px">
+	
+		<input id = "schoolgraph" name="school_profile[sch_graph_name]" type="text" /></td>
+		<td>APS average</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 293px; height: 7px;">Location</td>
+		<td style="width: 179px; height: 7px;">
+		<select name="school_profile[loc]" style="width: 67px">
+		<option value="HYD">HYD</option>
+		<option value="BLR">BLR</option>
+		<option value="DEL">DEL</option>
+		</select></td>
+		<td style="height: 7px"></td>
+		<td style="height: 7px"></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">Year Of Establishment</td>
+		<td style="width: 179px">
+		<input id = "year_of_estd" name="school_profile[year_of_estd]" type="text" /></td>
+		<td rowspan="2">School assessed by<br />
+		( initials only)</td>
+		<td><input id = "sch_assessed_by" name="infraname[sch_assessed_by]" type="text" /></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">Recognition</td>
+		<td style="width: 179px"><select name="school_profile[recognition]" style="width: 64px">
+		<option value="Yes">Yes</option>
+		<option value="No">No</option>
+		</select></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 293px; height: 24px">Recognition Upto Class(Enter Class)</td>
+		<td style="height: 24px; width: 179px;">
+		<select name="school_profile[rcg_upto_class]" style="width: 92px">
+		<option value="Class 1">Class 1</option>
+		<option value="Class 2">Class 2</option>
+		<option value="Class 3">Class 3</option>
+		<option value="Class 4">Class 4</option>
+		<option value="Class 5">Class 5</option>
+		<option value="Class 6">Class 6</option>
+		<option value="Class 7">Class 7</option>
+		<option value="Class 8">Class 8</option>
+		<option value="Class 9">Class 9</option>
+		<option value="Class 10">Class 10</option>
+		</select></td>
+		<td style="height: 24px">Date of assessment<br />
+		(format: July 2,2012)</td>
+		<td style="height: 24px"><input id = "date_of_assessment" name="infraname[date_of_assessment]" type="text" readonly="readonly" style="color:#000000; margin:-2px 0px 0px 0px;vertical-align:top;" /></td>
+	</tr>
+	<tr bgcolor="#FFFFFF">
+		<td bgcolor="#000000" colspan="2" style="height: 23px"></td>
+		<td rowspan="3">Is the School assessed again in the same year?<br />
+		If yes, mention assessment</td>
+		<td style="height: 23px"><select name="infraname[flag_sch_assessed]" style="width: 89px">
+		<option value="Yes">Yes</option>
+		<option value="No">No</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">Accreditation</td>
+		<td style="width: 179px">
+		
+			<input id="accreditation" name="school_profile[accreditation]" type="text" /></td>
+		<td rowspan="2"><select name="infraname[ment_assessment]" style="width: 88px">
+		<option value="Baseline">Baseline</option>
+		<option value="Endline">Endline</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">Qualification</td>
+		<td style="width: 179px">
+		
+			<input id="qualification" name="infraname[qualification]" type="text" /></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">Correspondant Name ( Include salutation)</td>
+		<td style="width: 179px">
+		
+			<input id = "corrname" name="infraname[corr_name]" type="text" /></td>
+		<td>School Code</td>
+		<td>
+		
+			<input id = "Sch_code" name="infraname[Sch_code]" style="width: 88px" type="text" /></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">Phone No.</td>
+		<td style="width: 179px">
+		
+			<input id = "ph_no" name="infraname[ph_no]" type="text" /><div id = "phonenum" style = "display:none;color:red;">Type a valid phone numebr please</div></td>
+		<td>Co-education</td>
+		<td>
+		
+			<select name="infraname[co_edu]">
+			<option value="Yes">Yes</option>
+		<option value="No">No</option>
+			</select></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;width:248pt" width="331">
+			<colgroup>
+				<col style="mso-width-source:userset;mso-width-alt:8009;width:164pt" width="219" />
+				<col style="mso-width-source:userset;mso-width-alt:4096;width:84pt" width="112" />
+			</colgroup>
+			<tr height="19" style="height:14.25pt">
+				<td bgcolor="#FFFFFF"  colspan="2" height="19" style="height: 14.25pt; width: 248pt" width="331">
+				School Mailing Address:</td>
+			</tr>
+		</table>
+		</td>
+		<td colspan="3">
+		
+			<input id = "sch_mail_add" name="infraname[sch_mail_add]" type="text" /><div id = "emailinfo" style = "display:none;color:red;">Type a valid e-mail please</div></td>
+	</tr>
+	<tr>
+		<td style="width: 293px">
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:248pt" width="331">
+			<colgroup>
+				<col style="mso-width-source:userset;mso-width-alt:8009;width:164pt" width="219" />
+				<col style="mso-width-source:userset;mso-width-alt:4096;width:84pt" width="112" />
+			</colgroup>
+			<tr height="20" style="height:15.0pt">
+				<td colspan="2" height="20" style="height: 15.0pt; width: 248pt" width="331">
+				City and Pincode:</td>
+			</tr>
+		</table>
+		</td>
+		<td colspan="3">
+		
+			<input id = "city_pincode" name="infraname[city_pincode]" type="text" /></td>
+	</tr>
+	<tr><td colspan="4"><br />
+		<strong>FACILITIES</strong></td></tr>
+	<tr><td colspan="4"><strong><em>Building</em></strong></td></tr>
+	<tr><td>Ownership</td><td colspan="3">
+		
+			<input  id = "ownership" name="infraname[ownership]" type="text" /></td></tr>
+	<tr><td>Number of Class Rooms</td><td colspan="3">
+			<input id = "no_of_classrooms"  name="infraname[no_of_classrooms]" type="text" /></td></tr>
+	<tr><td>Area (Sq Feet)</td><td colspan="3">
+		
+			<input id="area" name="infraname[area]" type="text" /></td></tr>
+	<tr><td>Construction Type</td><td colspan="3">
+		
+			<select name="infraname[const_type]" style="width: 214px">
+			<option value="Pucca">Pucca</option>
+			<option value="Semi-Pucca">Semi-Pucca</option>
+			<option value="Tiled">Tiled</option>
+			</select>
+		</td></tr>
+	<tr><td><strong><em>Learning Infrastructure</em></strong></td><td colspan="3">&nbsp;</td></tr>
+	<tr><td>Computers Lab</td><td colspan="3">
+			<select name="infraname[comp_lab]" style="width: 214px">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+			</select>
+		</td></tr>
+	<tr><td>Number of Computers</td><td colspan="3">
+		
+			<input id="no_of_comps" name="infraname[no_of_comps]" type="text" /></td></tr>
+	<tr><td>Internet availability</td><td colspan="3"><select name="infraname[internet_avail]">
+			<option value="Yes">Yes</option>
+		<option value="No">No</option>
+			</select></td></tr>
+	<tr><td>Digital Class</td><td colspan="3">
+		<select name="infraname[digi_class]" style="width: 214px">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+			</select></td></tr>
+	<tr><td>Library</td><td colspan="3">
+		<select name="infraname[library]" style="width: 214px">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Science Lab</td><td colspan="3">
+		<select name="infraname[sci_lab]" style="width: 214px">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Other Teaching Aids</td><td colspan="3">
+		<select name="infraname[other_teaching_aids]" style="width: 214px">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td><strong><em>School Infrastructure</em></strong></td><td colspan="3">&nbsp;</td></tr>
+	<tr><td>Classrooms</td><td colspan="3"><select name="infraname[classrooms]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Staff Room</td><td colspan="3"><select name="infraname[staffroom]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Transport</td><td colspan="3"><select name="infraname[transport]">
+			<option value="Yes">Yes</option>
+		<option value="No">No</option>
+			</select></td></tr>
+	<tr><td>Black Boards</td><td colspan="3"><select name="infraname[blackboards]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Benches &amp; Desks</td><td colspan="3"><select name="infraname[benches]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Toilets</td><td colspan="3"><select name="infraname[toilets]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Toilets For Females</td><td colspan="3"><select name="infraname[toilets_for_females]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Indoor games</td><td colspan="3"><select name="infraname[indoor_games]">
+			<option value="Yes">Yes</option>
+		<option value="No">No</option>
+			</select></td></tr>
+	<tr><td>Outdoor games</td><td colspan="3"><select name="infraname[outdoor_games]">
+			<option value="Yes">Yes</option>
+		<option value="No">No</option>
+			</select></td></tr>
+	<tr><td>Inter / Intra events</td><td colspan="3"><select name="infraname[inter_intra_events]">
+			<option value="Yes">Yes</option>
+		<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Access to games</td><td colspan="3"><select name="infraname[access_to_games]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td><em><strong>Activities</strong></em></td><td colspan="3">&nbsp;</td></tr>
+	<tr><td>Safety</td><td colspan="3"><select name="infraname[safety]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Cleanliness</td><td colspan="3"><select name="infraname[cleanliness]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Drinking Water</td><td colspan="3"><select name="infraname[drinking_water]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Fire Extinguisher</td><td colspan="3"><select name="infraname[fire_extinguisher]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>First aid</td><td colspan="3"><select name="infraname[first_aid]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+	<tr><td>Ventilation</td><td colspan="3"><select name="infraname[ventilation]">
+			<option value="Effective">Effective</option>
+			<option value="Ineffective">Ineffective</option>
+			<option value="No">No</option>
+
+			</select></td></tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<td align="center"><input id = "send" name="Submit1" type="submit" value="submit" /><span class ="er" style = "display:none;color:red;" > All Red mark field is required </span></td>
+</tr>
+</table>				 
+			    </form>
